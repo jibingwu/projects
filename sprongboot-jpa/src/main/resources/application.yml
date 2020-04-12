@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  #profiles: local
+  datasource:
+    url: jdbc:mysql://175.24.46.5:3306/dbt
+    username: root
+    password: Wujibing@123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    hibernate:
+      #更新或创建数据库表结构
+      ddl-auto: update
+      #输出执行sql
+    database: mysql
+    show-sql: true
+    open-in-view: false
